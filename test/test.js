@@ -1,6 +1,6 @@
 import assert from 'assert'
 import rollup from 'rollup'
-import browserifyPlugin from '..'
+import browserifyPlugin from '../src'
 import brfs from 'brfs'
 import coffeeify from 'coffeeify'
 import fs from 'fs'

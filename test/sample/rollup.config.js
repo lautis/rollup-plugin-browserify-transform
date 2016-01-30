@@ -1,4 +1,4 @@
-var browserify = require('../../index')
+import browserify from '../../dist/rollup-browserify-transform.es6'
 import brfs from 'brfs'
 
 export default {

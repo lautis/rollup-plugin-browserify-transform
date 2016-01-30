@@ -1,4 +1,11 @@
 {
-  "presets": ["es2015"],
-  "ignore": ["index.js", "node_modules/**/*.js"]
+  "ignore": ["node_modules/**/*.js"],
+  "env": {
+    "development": {
+      "presets": ["es2015"]
+    },
+    "production": {
+      "presets": ["es2015-rollup"]
+    }
+  }
 }
