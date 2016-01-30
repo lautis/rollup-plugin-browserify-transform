@@ -3,3 +3,4 @@ npm-debug.log*
 node_modules
 .npm
 .node_repl_history
+test/sample/bundle.js
