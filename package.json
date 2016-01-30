@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-browserify-tranform",
+  "name": "rollup-plugin-browserify-transform",
   "version": "0.1.0",
   "description": "Use Browserify transforms with Rollup",
   "keywords": [
@@ -7,7 +7,7 @@
     "browserify"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/lautis/rollup-plugin-browserify-tranform",
+  "homepage": "https://github.com/lautis/rollup-plugin-browserify-transform",
   "author": "Ville Lautanala",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
@@ -31,9 +31,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lautis/rollup-plugin-browserify-tranform.git"
+    "url": "git+https://github.com/lautis/rollup-plugin-browserify-transform.git"
   },
   "bugs": {
-    "url": "https://github.com/lautis/rollup-plugin-browserify-tranform/issues"
+    "url": "https://github.com/lautis/rollup-plugin-browserify-transform/issues"
   }
 }
