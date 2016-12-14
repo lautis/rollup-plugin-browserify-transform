@@ -1,5 +1,5 @@
 import assert from 'assert'
-import rollup from 'rollup'
+import {rollup} from 'rollup'
 import browserifyPlugin from '../src'
 import brfs from 'brfs'
 import coffeeify from 'coffeeify'
@@ -8,10 +8,10 @@ import fs from 'fs'
 process.chdir(__dirname)
 
 describe('rollup-plugin-browserify-transform', () => {
-  xit('transforms code with browserify transform', () => {
+  it('transforms code with browserify transform', () => {
     const entry = 'sample/main.js'
 
-    return rollup.rollup({
+    return rollup({
       entry: entry,
       plugins: [browserifyPlugin(brfs, {})]
     }).then((bundle) =>{
@@ -23,7 +23,7 @@ describe('rollup-plugin-browserify-transform', () => {
   it('supports transforms with source maps', () => {
     const entry = 'sample/test.coffee'
     const source = fs.readFileSync(entry).toString()
-    return rollup.rollup({
+    return rollup({
       entry: entry,
       plugins: [browserifyPlugin(coffeeify, {})]
     }).then((bundle) => {

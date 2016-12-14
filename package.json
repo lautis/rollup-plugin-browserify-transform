@@ -11,12 +11,12 @@
   "author": "Ville Lautanala",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
-    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "babel-register": "^6.3.13",
     "brfs": "^1.0.0",
     "coffeeify": "^2.0.1",
-    "mocha": "^2.3.4",
-    "rollup": "^0.22.0",
+    "mocha": "^3.2.0",
+    "rollup": "^0.37.0",
     "rollup-plugin-babel": "^2.3.9"
   },
   "scripts": {
