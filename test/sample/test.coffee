@@ -1,2 +1,1 @@
-identity = (a) -> a
-identity(1)
+callback((value) => value + 1)

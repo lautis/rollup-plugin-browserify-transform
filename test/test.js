@@ -12,23 +12,21 @@ describe('rollup-plugin-browserify-transform', () => {
     const entry = 'sample/main.js'
 
     return rollup({
-      entry: entry,
+      input: entry,
       plugins: [browserifyPlugin(brfs, {})]
-    }).then((bundle) =>{
-      const generated = bundle.generate()
-      assert(generated.code.trim().includes('<b>beep boop</b>'))
     })
+      .then((bundle) => bundle.generate({ format: 'umd'}))
+      .then((generated) => assert(generated.code.trim().includes('<b>beep boop</b>')))
   })
 
   it('supports transforms with source maps', () => {
     const entry = 'sample/test.coffee'
     const source = fs.readFileSync(entry).toString()
     return rollup({
-      entry: entry,
+      input: entry,
       plugins: [browserifyPlugin(coffeeify, {})]
-    }).then((bundle) => {
-      const generated = bundle.generate({ sourceMap: true })
-      assert.equal(generated.map.sourcesContent[0], source)
     })
+      .then((bundle) => bundle.generate({ format: 'cjs', sourcemap: true }))
+      .then((generated) => assert.equal(generated.map.sourcesContent[0], source))
   })
 })
