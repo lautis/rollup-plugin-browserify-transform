@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-browserify-transform",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Use Browserify transforms with Rollup",
   "keywords": [
     "rollup-plugin",
