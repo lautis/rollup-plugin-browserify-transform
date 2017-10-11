@@ -23,7 +23,7 @@
   "scripts": {
     "build": "rm -rf dist/* && BABEL_ENV=production rollup -c -f cjs -o dist/rollup-plugin-browserify-transform.cjs.js && BABEL_ENV=production rollup -c -f es6 -o dist/rollup-browserify-transform.es6.js",
     "test": "mocha --require babel-register",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "concat-stream": "^1.5.1",
